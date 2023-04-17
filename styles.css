@@ -1,24 +1,24 @@
 .grid-container {
     display: grid;
-        grid-template-columns: 1fr 0.5fr;
+        grid-template-columns: 1fr 0.3fr;
         grid-template-rows: auto 1fr auto;
         grid-template-areas:
     
             "navbar top-right"
     
-             "main-content sidebar"
+            "main-content sidebar"
     
             "main-content sidebar"
     
             "footer footer";
     
-       height: 100vh;
+        height: 100vh;
     
     }
 
     
     
-     .navbar {
+    .navbar {
     
         grid-area: navbar;
     
@@ -28,14 +28,16 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     
-     }
+    }
 
 
-         .navitems {
+        .navitems {
             color: #444;
 
 
       }
+
+
 
       .postsContainer {
         border: 1px solid black;
@@ -57,7 +59,51 @@
         background-color: #eee;
     
         padding: 20px;
+
+        text-align: center;
     
+         }
+
+         .sidebarHeading {
+
+         }
+
+         #imageBox {
+            margin: auto;
+    background-color: aqua;
+    height: 175px;
+    width: 175px;
+    border-radius: 15px;
+         }
+
+         #topicBar {
+            display: flex;
+            justify-content: space-evenly;
+         }
+
+        .topicName{ 
+            margin: 0;
+            margin-bottom: 30px;
+        }
+
+         #topicSearch {
+            border-radius: 5px;
+            transition: 1s ease;
+            height: 20px;
+            
+         }
+
+         #topicSearch:hover {
+            border-radius: 15px;
+            /* width: 200px;
+            height: 25px; */
+            box-shadow: 7px 7px 10px;
+         }
+
+         #help {
+            text-decoration: none;
+            margin-top: 328px;
+            
          }
     
     
@@ -83,6 +129,64 @@
      padding: 20px;
     
     }
+
+    .buttons-container{
+        display: flex;
+        flex-direction: row-reverse;
+        
+        padding: 10px 20px;
+        
+        border-radius: 5px;
+        
+        font-size: 16px;
+        
+        font-weight: bold;
+        
+        text-align: center;
+        
+        text-decoration: none;
+        
+        color: #fff;
+        
+        transition: background-color 0.3s ease;
+        
+        }
+
+        .button {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: pink;
+        margin: 15px;
+        
+
+        }
+        
+        
+        .signup {
+        
+       
+        
+        }
+        
+        
+        
+        
+        .login {
+        
+        
+        
+        }
+        
+        
+        
+        
+        .button:hover {
+        
+        background-color: #fff;
+        
+        }
     
     
     
