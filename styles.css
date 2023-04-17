@@ -18,17 +18,38 @@
 
     
     
-
-    
      .navbar {
     
         grid-area: navbar;
     
         background-color: #ccc;
     
-        padding: 20px;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
     
      }
+
+
+         .navitems {
+            color: #444;
+
+
+      }
+
+      .postsContainer {
+        border: 1px solid black;
+        height: 150px;
+        width: 100%;
+        margin: 30px 5px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 30px;
+        text-indent: 40px;
+    }
+      
+
+
+
         .sidebar {
     
         grid-area: sidebar;
