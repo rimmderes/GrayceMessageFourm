@@ -1,3 +1,28 @@
+
+    // for (let i = 0; i < data.posts.length; i++) {
+    //   replacePostTitle(i, data.posts[i].title);
+    //   replacePostData(i, data.posts[i].datePosted);
+    //   replacePostAuthors(i, data.posts[i].author);
+    //   replacePostComments(i, data.posts[i].comments);
+    // }
+
+
+
+// const replacePostData = (index, dates) => {
+//     dates[index].innerHTML = dates;
+//   };
+
+//   const replacePostAuthors = (index, authors) => {
+//     authors[index].innerHTML = authors;
+//   };
+
+//   const replacePostComments = (index, comments) => {
+//     comments[index].innerHTML = comments;
+//   };
+
+
+
+
 // const forumData = new XMLHttpRequest();
 
 // forumData.open('GET', 'data.json', true);

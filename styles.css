@@ -1,213 +1,175 @@
 .grid-container {
-    display: grid;
-        grid-template-columns: 1fr 0.25fr;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas:
-    
-            "navbar top-right"
-    
-            "main-content sidebar"
-    
-            "main-content sidebar"
-    
-            "footer footer";
-    
-        height: 100vh;
-    
-    }
+  display: grid;
+  grid-template-columns: 1fr 0.25fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "navbar top-right"
+    "main-content sidebar"
+    "main-content sidebar"
+    "footer footer";
 
-    
-    .navbar {
-    
-        grid-area: navbar;
-        background-color: #7F2732;
-        padding: 1rem;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-    
-    }
+  height: 100vh;
+}
 
+.navbar {
+  grid-area: navbar;
+  background-color: #7f2732;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-bottom: 2px solid #c98686;
+}
 
-        .navItems {
-            color: #E7CFBC;
+.navItems {
+  color: #e7cfbc;
+  cursor: pointer;
+}
 
+.navItems:hover {
+  color: lightblue;
+  text-decoration-line: underline;
+}
 
-      }
+.postsContainer {
+  border: 1px solid black;
+  height: 150px;
+  width: 95%;
+  margin: 30px 5px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px;
+  text-indent: 40px;
+  transition: 0.2s;
+  opacity: 0.7;
 
+}
 
-      .postsContainer {
-        border: 1px solid black;
-        height: 150px;
-        width: 100%;
-        margin: 30px 5px;
-        border-radius: 20px;
-        box-shadow: 5px 5px 30px;
-        text-indent: 40px;
-    }
-      
+.postsContainer:hover {
+  border: 3px solid #e7cfbc;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px;
+  opacity: 1;
+}
 
+.sidebar {
+  grid-area: sidebar;
 
+  background-color: #e7cfbc;
 
-        .sidebar {
-    
-        grid-area: sidebar;
-    
-        background-color: #E7CFBC;
-    
-        padding: 20px;
+  padding: 20px;
 
-        text-align: center;
-    
-         }
+  text-align: center;
+}
 
-         .sidebarHeading {
-            color: #7F534B;
+.sidebarHeading {
+  color: #7f534b;
+}
 
-         }
+#imageBox {
+  margin: auto;
+  background-color: #c98686;
+  height: 175px;
+  width: 175px;
+  border-radius: 15px;
+}
 
-         #imageBox {
-            margin: auto;
-            background-color: #C98686;
-            height: 175px;
-            width: 175px;
-            border-radius: 15px;
-         }
+#topicBar {
+  display: flex;
+  justify-content: space-evenly;
+  color: #7f534b;
+}
 
-         #topicBar {
-            display: flex;
-            justify-content: space-evenly;
-            color: #7F534B;
-         }
+.topicName {
+  margin: 0;
+  margin-bottom: 30px;
+}
 
-        .topicName{ 
-            margin: 0;
-            margin-bottom: 30px;
-        }
+#topicSearch {
+  border-radius: 5px;
+  background-color: #fff4ec;
+  transition: 1s ease;
+  height: 20px;
+}
 
-         #topicSearch {
-            border-radius: 5px;
-            background-color: #FFF4EC;
-            transition: 1s ease;
-            height: 20px;
-            
-         }
+#topicSearch:hover {
+  border-radius: 15px;
+  /* width: 200px;
+    height: 25px; */
+  box-shadow: 7px 7px 10px;
+}
 
-         #topicSearch:hover {
-            border-radius: 15px;
-            /* width: 200px;
-            height: 25px; */
-            box-shadow: 7px 7px 10px;
-         }
+#help {
+  text-decoration: none;
+  margin-top: 328px;
+}
 
-         #help {
-            text-decoration: none;
-            margin-top: 328px;
-            
-         }
-    
-    
-    
-     .main-content {
-    
-     grid-area: main-content;
-    
-    background-color: #FFF4EC;
-    
-    padding: 20px;
-    
-     }
-    
-    
-    
-    .top-right {
-    
-    grid-area: top-right;
-    
-    background-color: #7F2732;
-    
-     padding: 20px;
-    
-    }
+.main-content {
+  grid-area: main-content;
 
-    .buttons-container{
-        display: flex;
-        flex-direction: row-reverse;
-        
-        padding: 10px 20px;
-        
-        border-radius: 5px;
-        
-        font-size: 16px;
-        
-        font-weight: bold;
-        
-        text-align: center;
-        
-        text-decoration: none;
-        
-        transition: background-color 0.3s ease;
-        
-        }
+  background-color: #fff4ec;
 
-        .button {
-        background-color: #FFF4EC;
-        padding: 10px;
-        border-radius: 20px;
-        text-decoration: none;
-        color: #C98686;
-        margin: 15px;
-        
+  padding: 20px;
+}
 
-        }
-        
-        
-        .signup {
+.top-right {
+  grid-area: top-right;
+  background-color: #7f2732;
+  padding: 20px;
+  border-bottom: 2px solid #c98686;
+}
 
-        
-        }
-        
-        
-        
-        
-        .login {
-        
-        
-        
-        }
-        
-        
-        
-        
-        .button:hover {
-        
-        background-color: #E7CFBC;
-        
-        }
-    
-    
-    
-    .bottom-right {
-    
-        grid-area: bottom-right;
-    
-        background-color: #bbb;
-    
-        padding: 20px;
-    
-     }
-    
-    
-    
-    
-    .footer {
-    
-     grid-area: footer;
-    
-     background-color: #444;
-     color: #fff;
-    
-     padding: 20px;
-    
-     text-align: center;
-    
-    }
+.buttons-container {
+  display: flex;
+  flex-direction: row-reverse;
+
+  padding: 10px 20px;
+
+  border-radius: 5px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  transition: background-color 0.3s ease;
+}
+
+.button {
+  background-color: #fff4ec;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #c98686;
+  margin: 15px;
+}
+
+.signup {
+}
+
+.login {
+}
+
+.button:hover {
+  background-color: #e7cfbc;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+
+  background-color: #bbb;
+
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+
+  background-color: #444;
+  color: #fff;
+
+  padding: 20px;
+
+  text-align: center;
+}
