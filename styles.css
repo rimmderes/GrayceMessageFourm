@@ -7,7 +7,6 @@
     "main-content sidebar"
     "main-content sidebar"
     "footer footer";
-
   height: 100vh;
 }
 
@@ -157,19 +156,14 @@
 
 .bottom-right {
   grid-area: bottom-right;
-
   background-color: #bbb;
-
   padding: 20px;
 }
 
 .footer {
   grid-area: footer;
-
   background-color: #444;
   color: #fff;
-
   padding: 20px;
-
   text-align: center;
 }
